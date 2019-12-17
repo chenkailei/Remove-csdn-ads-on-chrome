@@ -5,8 +5,8 @@
   "description": "clear CSDN AD.",
   "content_scripts": [
     {
-      "matches": ["https://blog.csdn.net/*"],
-      "js": ["myscript.js"]
+      "matches": ["https://blog.csdn.net/*","https://www.csdn.net/*"],
+      "js": ["jquery.js","myscript.js"]
     }
   ]
 }
