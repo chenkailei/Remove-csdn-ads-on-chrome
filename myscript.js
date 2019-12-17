@@ -1,7 +1,12 @@
 function clearAd() {
-  if ($(".recommend-recommend-box") || $("div[data-pid]") || document.getElementsByClassName("right_extension") || document.getElementsByClassName("banner-ad-box") || $("li[data-type='ad']")) {
+  if ($(".recommend-recommend-box") || $(".right_top") || $("div[data-pid]") || document.getElementsByClassName("right_extension") || document.getElementsByClassName("banner-ad-box") || $("li[data-type='ad']")) {
     if ($(".recommend-recommend-box")) {
       Array.from($(".recommend-recommend-box")).forEach(item => {
+        item.remove()
+      })
+    }
+	if ($(".right_top")) {
+      Array.from($(".right_top")).forEach(item => {
         item.remove()
       })
     }
