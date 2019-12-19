@@ -1,11 +1,11 @@
 {  
   "name": "clearCsdnAd",  
-  "version": "1.0.0",  
+  "version": "1.0.1",  
   "manifest_version": 2,
   "description": "clear CSDN AD.",
   "content_scripts": [
     {
-      "matches": ["https://blog.csdn.net/*","https://www.csdn.net/*"],
+      "matches": ["https://blog.csdn.net/*","https://www.csdn.net/*","https://so.csdn.net/*"],
       "js": ["jquery.js","myscript.js"]
     }
   ]

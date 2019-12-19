@@ -1,5 +1,5 @@
 function clearAd() {
-  if ($(".recommend-recommend-box") || $(".right_top") || $("div[data-pid]") || $(".right_extension") || $(".banner-ad-box") || $("li[data-type='ad']")) {
+  if ($(".recommend-recommend-box") || $(".right_top") || $("div[data-pid]") || $(".right_extension") || $(".banner-ad-box") || $("li[data-type='ad']") || $(".rightadv")) {
     if ($(".recommend-recommend-box")) {
       Array.from($(".recommend-recommend-box")).forEach(item => {
         item.remove()
@@ -11,6 +11,7 @@ function clearAd() {
       })
     }
     if ($("div[data-pid]")) {
+		console.log($("div[data-pid]"))
       Array.from($("div[data-pid]")).forEach(item => {
         item.remove()
       })
@@ -30,6 +31,11 @@ function clearAd() {
         item.remove()
       })
     }
+	if($(".rightadv")){
+		if ($(".rightadv").length !== 0) {
+        $(".rightadv")[0].remove()
+      }
+	}
   } else {
     setTimeout(() => {
       clearAd()
